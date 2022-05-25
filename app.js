@@ -12,8 +12,7 @@ const cargarPersonas = async () => {
             let personas = '';
 
             datos.data.forEach(persona => {
-                personas += `<p>
-                Nombre: ${persona.lastname} ${persona.firstname}</p>`
+                personas += `<p>Nombre: ${persona.lastname} ${persona.firstname}</p>`
             })
             document.querySelector('#contenedor').innerHTML = personas;
 
